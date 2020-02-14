@@ -25,7 +25,7 @@ def main():
 	pt = Point(x_default, y_default, steps)
 	pt.draw(win)
 	pt.setFill("red")
-	
+
 	path = [x_default, y_default]
 	for i in range(0, small_max):
 		if cur_path > 0:
@@ -97,4 +97,5 @@ def main():
 			t.undraw()
 			drawn = False
 
-main()
+if __name__ == "__main__":
+	main()
